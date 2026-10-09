@@ -1,0 +1,15 @@
+import pandas as pd
+df=pd.read_csv("students.csv")
+print("\n---Student Data---")
+print(df)
+print("\n---Dataset Information---")
+print("Number of students:", len(df))
+print("Columns names:", list(df.columns))
+df["average"]=df[["Python","SQL","Excel"]].mean(axis=1)
+print(df[["Name","average"]])
+top_student=df.loc[df["average"].idxmax()]
+print("\n---Top Student---")
+print("Name:", top_student["Name"])
+print("Average Score:", f'{top_student["average"]:.2f}')
+print("\n---Subject averages---")
+print(df[["Python","SQL","Excel"]].mean())
