@@ -20,6 +20,9 @@ The sample dataset contains these columns:
 - Displays the student data in a tabular format.
 - Shows the number of students in the dataset.
 - Displays the column names.
+- Caluculates each student's average marks.
+- Identifies the top-performing student.
+- Calculates average marks for each subjects.
 
 ## Technologies Used
 
